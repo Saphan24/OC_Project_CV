@@ -16,7 +16,7 @@ body{
 /*#######################################################################################*/
 /*#######################################################################################*/
 
-/* contient 2 elements: #container_1 et #container_2 */
+/* .container contient 2 éléments: #container_1 et #container_2 */
 
 .container{ 
     width: 100%;
@@ -25,7 +25,7 @@ body{
     flex-direction: column;
 }
 
-/* contient 2 elements: #photo et #name */
+/* #container_1 contient 2 éléments: #photo et #name */
 
 #container_1{ 
     width: 100%;
@@ -64,14 +64,14 @@ strong{
 	color: #FECA07;
 }
 
-/* contient 2 element: #sidebar et main */
-#container_2{
+/* #container_2 contient 2 éléments: #sidebar et main */
+#container_2{ 
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* contient 3 elements: address, section et aside */
+/* #sidebar contient 3 elements: address, section et aside */
 #sidebar{ 
     width: 100%;
     display: flex;
@@ -134,7 +134,7 @@ aside{
     overflow: hidden;
 }
 
-/* les titres utilisés pour address, section et aside */
+/* Les titres utilisés pour address, section et aside */
 
 .titles{ 
     width: 100%;
@@ -241,7 +241,7 @@ hr{
     list-style: none;
 }
 
-/* toutes les regles d'icones */
+/* Toutes les règles d'icônes */
 
 .section_title i{
 	transform: scale(1.2);
@@ -263,13 +263,13 @@ hr{
     padding-right: 20px;
 }
 
-/* fin des regles d'icones */
-
 /*#######################################################################################*/
 /*#######################################################################################*/
 /*################## Appareils avec une résolution min-width: 769px #####################*/
 /*#######################################################################################*/
 /*#######################################################################################*/
+
+/* #container_1 contient 2 éléments: #photo et #name */
 
 @media only screen and (min-width: 769px) {
     #container_1{
@@ -294,6 +294,9 @@ hr{
         padding-top: 15px;
         text-align: left;
     }
+
+/* #container_2 contient 2 éléments: #sidebar et main */
+
     #container_2{
         width: 100%;
         height: auto;
@@ -402,7 +405,7 @@ hr{
         margin-bottom: 15px;
     }
 
-    /* toutes les regles d'icones */
+/* Toutes les règles d'icônes */
     
     .section_title i{
         padding-left: 60px;
