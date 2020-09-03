@@ -49,7 +49,7 @@ body{
 }
 #name h1{
     margin: auto;
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 #name h2{
     font-size: 1.6em;
@@ -171,11 +171,10 @@ main{
     font-size: 1.4em;
 }
 hr{
-    width: 80%;
     height: 2px;
 	border-top: 2px solid #FECA07;
     align-self: center;
-    margin: 10px 10px 0 50px;
+    margin: 10px 10px 0 10px;
 }
 .section_contenu{
 	width: 100%;
@@ -220,16 +219,15 @@ hr{
     flex-direction: column;
 }
 .section_contenu_paragraph_recommandations {
-    margin-top: 30px;
-    height: 250px;
+    margin-top: 20px;
 }
 .section_contenu_paragraph_recommandations h5 {
     font-size: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-left: 20px;
 }
 .section_contenu_paragraph_recommandations ul li {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-left: 20px;
     font-weight: bold;
 }
@@ -237,7 +235,6 @@ hr{
     font-weight: normal;
     }
 .section_contenu_paragraph_recommandations ul {
-    margin-bottom: 30px;
     list-style: none;
 }
 
@@ -340,7 +337,7 @@ hr{
         margin-top: 0;
     }
     hr{
-        width: 90%;
+        width: 85%;
         height: 1px;
         margin-left: 60px;
     }
@@ -419,5 +416,63 @@ hr{
     .fa-circle{
         padding-right: 20px;
         padding-bottom: 15px;
+    }
+}
+
+/*#######################################################################################*/
+/*#######################################################################################*/
+/*################## Appareils avec une résolution max-width: 517px #####################*/
+/*#######################################################################################*/
+/*#######################################################################################*/
+
+/* #container_2 : main */
+
+@media only screen and (max-width: 517px) {
+    .section_contenu_paragraph_left {
+        height: 5px;
+        display: flex;
+        padding-left: 10px;
+    }
+    .section_contenu_paragraph_right {
+        width: 100%;
+        height: auto;
+    }
+    .section_contenu_paragraph_right h4 {
+        margin-bottom: 0;
+    }
+    .section_contenu {
+    padding-top: 20px;
+    height: auto;
+    }    
+    hr {
+        width: 100%;
+        height: 2px;
+        border-top: 2px solid #FECA07;
+        align-self: center;
+        margin: 0 0 5px;
+    }
+    #mesExperiences{
+        padding-top: 30px;
+    }
+    #mesExperiences .section_title{
+        font-size: 1em;
+    }
+    .section_title i {
+        transform: scale(1.2);
+        color: #FECA07;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+/*#######################################################################################*/
+/*#######################################################################################*/
+/*################## Appareils avec une résolution max-width: 320px #####################*/
+/*#######################################################################################*/
+/*#######################################################################################*/    
+
+    @media only screen and (max-width: 320px){
+        hr {
+        margin-top: 20px;
+        }
     }
 }
