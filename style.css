@@ -8,6 +8,7 @@
 body{
 	list-style: none;
     font-family: 'Montserrat', sans-serif;
+    color: #404040;
  }
 
 /*#######################################################################################*/
@@ -50,10 +51,11 @@ body{
 #name h1{
     margin: auto;
     font-size: 2.3em;
-}
+    color: #000000;}
 #name h2{
     font-size: 1.6em;
-    color: #000;
+    color: #404040;
+    background-color:#FEFEFE;
     text-align: center;
     margin-bottom: 100px;
 }
@@ -64,39 +66,39 @@ strong{
 	color: #FECA07;
 }
 
-/* #container_2 contient 2 éléments: #sidebar et main */
+/* #container_2 contient: #sidebar  */
 #container_2{ 
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* #sidebar contient 3 elements: address, section et aside */
+/* #sidebar contient 3 elements: .address, section et aside */
 #sidebar{ 
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #FECA07;
 }
-address{
+.address{
     width: 100%;
     font-style: normal;
 }
-address ul{
+.address ul{
     padding: 40px 0 40px 0;
 }
-address ul li{
+.address ul li{
     padding: 20px 0 0 30px;
 }
-address ul li a{
+.address ul li a{
     text-decoration: none;
-    color: #000;
+    color: #404040;
 }
-address ul li:nth-child(odd){
+.address ul li:nth-child(odd){
     font-weight: bold;
     margin-bottom: -20px;
 }
-address ul li:nth-child(even){
+.address ul li:nth-child(even){
     margin-bottom: 30px;
 }
 section{
@@ -126,7 +128,7 @@ aside{
 .icone_rond{
 	width: 75px;
 	height: 75px;
-	border: 2px solid #000;
+	border: 2px solid #404040;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -134,22 +136,22 @@ aside{
     overflow: hidden;
 }
 
-/* Les titres utilisés pour address, section et aside */
+/* Les titres utilisés pour .address, section et aside */
 
-.titles{ 
+h2{ 
     width: 100%;
     height: 45px;
     padding: 6px 0 10px 0;
-    background-color: #000;
+    background-color: #404040;
     color: #FECA07;
     text-align: center;
     font-weight: bold;
     font-size: 1.6em;
 }
 
-/* main (3 sections): #maFormation, #mesExperiences et #mesRecommandations */
+/* article (3 sections): #maFormation, #mesExperiences et #mesRecommandations */
 
-main{
+article{
     width: 100%;
     height: auto;
     display: flex;
@@ -165,6 +167,7 @@ main{
 }
 .section_title{
     display: flex;
+    color: #000000;
     width: 100%;
     height: 30px;
     margin-top: 16px;
@@ -277,6 +280,9 @@ hr{
         width: 30%;
         height: 280px;
     }
+    article{
+        width: 70%;
+    }
     #name{
         width: 70%;
         height: 280px;
@@ -292,7 +298,7 @@ hr{
         text-align: left;
     }
 
-/* #container_2 contient 2 éléments: #sidebar et main */
+/* #container_2 contient 2 éléments: #sidebar et article */
 
     #container_2{
         width: 100%;
@@ -304,10 +310,10 @@ hr{
         width: 30%;
         height: 1700px;
     }
-    address{
+    .address{
         height: 440px;
     }
-    address ul{
+    .address ul{
         padding: 10px 0 25px 0;
     }
     section{
@@ -325,7 +331,7 @@ hr{
     #mesLoisirs{
         padding-top: 50px;
     }
-    main{
+    .main{
         width: 70%;
         height: auto;
         padding-left: 0;
@@ -455,7 +461,7 @@ hr{
         padding-top: 30px;
     }
     #mesExperiences .section_title{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .section_title i {
         transform: scale(1.2);
